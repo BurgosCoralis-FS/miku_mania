@@ -31,7 +31,13 @@ import tailwindLogo from './tech/tailwind.png';
 import close from './close.svg';
 import menu from './menu.svg';
 
-// Projects
+// Characters
+import HatsuneMiku from './characters/Hatsune_Miku216.png'
+import KagamineRin from './characters/Kagamine_Rin216.png'
+import KagamineLen from './characters/Kagamine_Len216.png'
+import MegurineLuka from './characters/megurine_luka.png'
+import Meiko from './characters/meiko.png'
+import Kaito from './characters/kaito.png'
 import spaceTrackerUI from './projects/SpaceTrackerUI.png';
 import koreanDiary from './projects/KoreanDiary.png';
 import responsiveDesign from './projects/ResponsiveDesign.png';
@@ -83,4 +89,10 @@ export {
   puertoRico,
   unitedStates,
   southKorea,
+  HatsuneMiku,
+  KagamineRin,
+  KagamineLen,
+  MegurineLuka,
+  Meiko,
+  Kaito
 };
