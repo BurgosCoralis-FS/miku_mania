@@ -1,13 +1,3 @@
-/*
-  Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-  Author: Sara Echeverria
-  Edited by: Cora (kiricora)
-  FileName: constants.js
-  Version: I
-  Creation: 02/06/2023
-  Last modification: 05/12/2024
-*/
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 import {
@@ -108,38 +98,12 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hey, I'm so happy you're here! (:",
+    "Hi Hi!",
 
     "My name is Cora, and I am a 25-year-old online student at Full Sail University pursuing a bachelor of science in web development.",
-    "Aside from regular activities, I enjoy gaming, cosplay, and horror movies.",
-
-    "I am an introverted and timid person, yet I am always eager to learn, collaborate with others, and create new things together. Thank you for taking the time to look through my portfolio. @m1sumisu in Instagram created my avatar!",
-  ],
+    "I made this page as a side project for my portfolio and heavily inspired by Hatsune Miku"
+  ]
 };
-
-const languages = [
-  {
-    id: 'spanish',
-    title: 'Spanish',
-    icon: puertoRico,
-    level: 'Native Proficiency',
-    details: 'I was born and raised in Puerto Rico, where the primary language is Spanish.'
-  },
-  {
-    id: 'english',
-    title: 'English',
-    icon: unitedStates,
-    level: 'Fluent',
-    details: 'Since kindergarten till my senior year of high school, I have been studying English. Aside from that, I used television, video games, and movies to improve and hone my English.'
-  },
-  {
-    id: 'korean',
-    title: 'Korean',
-    icon: southKorea,
-    level: 'Intermediate',
-    details: 'For a year, I have been taking Korean classes with an online tutor. Although my speaking may use some improvement, my writing and listening skills are at an intermediate level.'
-  }
-];
 
 export const navLinks = [
   {
@@ -147,12 +111,8 @@ export const navLinks = [
     title: 'About',
   },
   {
-    id: 'languages',
-    title: 'Languages',
-  },
-  {
-    id: 'projects',
-    title: 'Projects',
+    id: 'characters',
+    title: 'Characters',
   },
   {
     id: 'skills',
@@ -385,5 +345,4 @@ export {
   skills,
   markerSvg,
   icons,
-  languages,
 };

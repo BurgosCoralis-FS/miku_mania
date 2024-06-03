@@ -14,7 +14,6 @@ import Projects from "../Pages/Projects";
 import About from "../Pages/About";
 import Skills from "../Pages/Skills";
 import Contact from "../Pages/Contact";
-import Languages from "../Pages/Languages";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
       <NavBar />
       <Hero />
       <About />
-      <Languages />
       <Projects />
       <Skills />
       <Contact />

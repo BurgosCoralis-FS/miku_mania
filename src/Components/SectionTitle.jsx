@@ -1,12 +1,3 @@
-/*
-  Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-  Author: Sara Echeverria
-  FileName: SectionTitle.jsx
-  Version: I
-  Creation: 02/06/2023
-  Last modification: 04/27/2024
-*/
-
 import { m, LazyMotion, domAnimation } from "framer-motion";
 
 const SectionTitle = (props) => {
@@ -24,7 +15,7 @@ const SectionTitle = (props) => {
           className="opacity-50"
           style={{
             textTransform: "uppercase",
-            fontFamily: "Poppins, sans-serif",
+            fontFamily: "Exo Bold",
             fontWeight: "600",
           }}
         >
@@ -32,7 +23,7 @@ const SectionTitle = (props) => {
         </span>
         <h2
           className="tracking-wider text-7xl sm:text-8xl md:text-9xl"
-          style={{ fontFamily: "Exo Black"}}
+          style={{ fontFamily: "Exo Bold"}}
         >
           {title.split("").map((char, index) => {
             if(char === " ") {
