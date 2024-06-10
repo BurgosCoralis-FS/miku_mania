@@ -111,70 +111,43 @@ const SectionWrapper = (Component, idName) =>
     )
   };
 
-  const ProjectCard = ({ index, name, description, category, image, source_code_link, demo_link }) => {
+  const ProjectCard = ({ index, name, description, category, image }) => {
     return (
       <motion.div
-        variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+        variants={fadeIn("up", "spring", index * 0.2, 0.75)}
+        className="w-full sm:w-1/2 lg:w-1/3 p-4"
       >
         <Tilt
-          options={{
-            max: 40,
-            scale: 1,
-            speed: 450
-          }}
-          className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
-          style={{ marginTop: '-120%' }}
-          >
-          <div
-            className="relative w-full h-[180px]"
-          >
+          options={{ max: 25, scale: 1, speed: 400 }}
+          className="bg-primary-500 shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+        >
+          <div className="relative w-full pb-[56.25%]"> 
             <img 
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-lg"
+              src={image} 
+              alt={name} 
+              className="absolute top-2 left-28 w-auto h-full object-cover" 
             />
-            <div
-              className="absolute inset-0 flex justify-end m-3 card-img_hover"
-            >
-            </div>
           </div>
-  
-          <div className="mt-3">
-            <h3 className="text-white font-bold text-[20px]">{name}</h3>
-            <p className="mt-2 font-bold text-secondary text-[14px] leading-[18px]">{category}</p>
-            <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
-          </div>
-          <div
-            className="mt-2 flex flex-wrap gap-1"
-          >
+          <div className="p-5">
+            <h3 className="text-primary-800 font-bold text-xl mb-2">{name}</h3>
+            <p className="text-grayscale-950 text-sm">{description}</p>
           </div>
         </Tilt>
       </motion.div>
-    )
-  }  
+    );
+  }; 
 
-const Works = () => {
-  return (
-    <>
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
-        </motion.p>
+  const Works = () => {
+    return (
+      <div className="w-full flex flex-col items-center">
+        <div className="mt-20 flex flex-wrap justify-center gap-6">
+          {characters.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
       </div>
-
-      <div className="mt-20 flex flex-wrap gap-2">
-        {characters.map((project, index) => (
-          <ProjectCard 
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
-        ))}
-      </div>
-    </>
-  );
-};
+    );
+  };
 
 export default SectionWrapper(Works, "");
+

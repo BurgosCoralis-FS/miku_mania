@@ -1,21 +1,6 @@
-/*
-  Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-  Author: Sara Echeverria
-  FileName: index.css
-  Version: I
-  Creation: 02/06/2023
-  Last modification: 04/27/2024
-*/
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "SuperMario";
-  src: url(/Fonts/Mario/SuperMario256.ttf);
-}
 
 * {
   margin: 0;
@@ -91,7 +76,29 @@ polyline {
   user-select: none;
 }
 
-.blob {
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the image container */
+.floating {
+  width: 300px; /* Adjust the size as needed */
+  height: 300px; /* Adjust the size as needed */
+  background-color: #292D44;
+  background-size: cover;
+  background-position: center;
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* .blob {
   animation: morph 3.6s linear infinite;
   background: #292D44;
   border-collapse: separate;
@@ -117,7 +124,7 @@ polyline {
     -webkit-border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
     -moz-border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
   }
-}
+} */
 
 .bounce {
   transition: all 0.3s ease-out;
@@ -157,8 +164,8 @@ polyline {
   .drop-shadow-div {
     -webkit-appearance: none;
     appearance: none;
-    -webkit-filter: drop-shadow(0 0 1.5rem #cbbde5);
-    filter: drop-shadow(0 0 1.5rem #cbbde5);
+    -webkit-filter: drop-shadow(0 0 1.5rem #39C5BB);
+    filter: drop-shadow(0 0 1.5rem #39C5BB);
   }
 }
 

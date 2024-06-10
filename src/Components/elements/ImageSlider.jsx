@@ -1,12 +1,3 @@
-/*
-  Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-  Author: Sara Echeverria
-  FileName: ImageSlider.jsx
-  Version: I
-  Creation: 02/06/2023
-  Last modification: 04/27/2024
-*/
-
 import { useEffect, useState, useRef } from "react";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 
@@ -50,7 +41,7 @@ const ImageSlider = ({ images }) => {
           stiffness: 100,
           damping: 20,
         }}
-        className="w-full h-full blob drop-shadow-div"
+        className="w-full h-full floating drop-shadow-div"
         style={{ backgroundImage: `url(${images[index]})` }}
       ></m.div>
     </LazyMotion>

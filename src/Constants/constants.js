@@ -107,7 +107,7 @@ const introduction = {
     "Hi Hi!",
 
     "My name is Cora, and I am a 25-year-old online student at Full Sail University pursuing a bachelor of science in web development.",
-    "I made this page as a side project for my portfolio and heavily inspired by Hatsune Miku"
+    "I made this page as a side project for my portfolio and to showcase the vocaloid characters. The color scheme is inspired by Hatsune Miku."
   ]
 };
 
@@ -119,14 +119,6 @@ export const navLinks = [
   {
     id: 'characters',
     title: 'Characters',
-  },
-  {
-    id: 'skills',
-    title: 'Skills',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
   },
 ];
 
