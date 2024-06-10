@@ -16,6 +16,9 @@ import Kaito from './characters/kaito.png'
 // Avatar
 import avatar from './avatar/avatar.jpeg';
 
+// Video
+import heroVideo from './video/【AMV】HatsuneMiku_FASHION4K60FPS」.mp4'
+
 export {
   menu,
   close,
@@ -26,5 +29,6 @@ export {
   KagamineLen,
   MegurineLuka,
   Meiko,
-  Kaito
+  Kaito,
+  heroVideo,
 };

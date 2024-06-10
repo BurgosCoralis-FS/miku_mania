@@ -5,11 +5,13 @@ import {
   KagamineLen,
   MegurineLuka,
   Meiko,
-  Kaito
+  Kaito,
+  heroVideo,
 } from '../assets';
 
 const media = {
   avatar,
+  heroVideo,
 };
 
 const introduction = {
