@@ -44,7 +44,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/bl33h/whosbl33h
+$ git clone https://github.com/BurgosCoralis-FS/miku_mania.git
 
 # Install dependencies
 $ npm i
