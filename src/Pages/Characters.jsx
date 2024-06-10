@@ -4,16 +4,14 @@ import ProjectCards from "../Components/ProjectCards";
 
 const Characters = () => {
   return (
-    <div id="characters" className="w-full overflow-hidden-web flex justify-center">
-      <div className="w-full min-h-[800px] h-screen xl:w-[70%] relative mt-40 flex flex-col items-center justify-center pb-36">
-        <div className="w-full h-[180%] mt-[-10%] mb-[-10%]">
+    <div id="characters" className="w-full overflow-hidden flex justify-center">
+      <div className="w-full min-h-[800px] xl:w-[70%] relative mt-40 flex flex-col items-center justify-center pb-36">
+        <div className="w-full h-auto mb-10">
           <SectionTitle title="CHARACTERS" subtitle="Vocaloid" />
         </div>
-        <div className="w-full h-[70%] z-10 flex justify-center">
-          <div className="w-full xl:w-[70%] h-[-10%]">
+        <div className="w-full z-10 flex justify-center">
+          <div className="w-full xl:w-[70%]">
             <ProjectCards />
-          </div>
-          <div className="absolute w-full h-full top-[100%] right-[-75%] sm:right-[-50%]">
           </div>
         </div>
       </div>
